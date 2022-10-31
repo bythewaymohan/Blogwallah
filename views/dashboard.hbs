@@ -1,0 +1,67 @@
+<section class="banner2_section border py-2 mt-4">
+    <div class="container text-center">
+        <h3 class="text-center border-bottom p-3" style="color: #0f5132;">Dashboard</h3>
+        <div class="row pb-2">
+            <div class="col-md-6 text-center mt-3">
+                {{!-- left side --}}
+                <img class="shadow p-1 bg-body" src="{{image}}" alt="{{name}}"
+                    style="height:150px; width:150px; border-radius:50%;">
+                <h4 class="mt-2">Welcome! {{name}} {{lname}}</h4>
+            </div>
+            <div class="col-md-6 text-center mt-4">
+                {{!-- right side --}}
+
+                <p style="font-weight:bold;">Thank's For Comming! {{name}}</p>
+                <p class="py-1">
+                    Writing a blog is a good habit, it is a way to lighten the mind. 
+                    Also you are doing good work which helps other people. You also 
+                    share your new experience through blog. At the same time, you also 
+                    learn something new by reading others' blogs.
+                </p>
+                {{>_add_btn}}
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+{{#if blogss}}
+<table class="table mt-4 table-striped border-1">
+    <thead>
+        <tr>
+            <th>Tittle</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each blogss}}
+        <tr>
+            <td><a href="/blogss/{{_id}}" style="text-decoration:none;">{{title}}</a></td>
+            <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
+            <td><span class="dash-status">{{status}}</span></td>
+            <td><a href="/blogss/edit/{{_id}}" class="btn btn-outline-success"><i class="fas fa-edit fa-small"></i></a></td>
+            <td>
+                <form action="/blogss/{{_id}}" method="POST" id="delete-form">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-outline-danger">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<div class="alert alert-danger mt-5" role="alert">
+    <strong>Warning!</strong> You have not created any Blog
+</div>
+{{/if}}
+
+

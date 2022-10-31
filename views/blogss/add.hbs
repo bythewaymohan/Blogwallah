@@ -1,0 +1,33 @@
+<div class="container mt-5 mb-5 border p-3 bg-light">
+    <h4 class="text-center">Write Your New Blogs and Thoughts</h4>
+    <form action="/blogss" method="POST" class="col-12">
+
+        <div class="form-floating mt-3 mb-3">
+            <input type="text" id="title" name="title" class="form-control" placeholder="Title">
+            <label for="title">Title</label>
+        </div>
+        <div class="from-floating mt-3 mb-3">
+            <label class="form-label" for="customFile">Insert Thumbnail</label>
+            <input type="file" class="form-control" id="thumbnail" name="thumbnail"/>
+        </div>
+        <div class="form-control">
+            <label for="status" class="form-label">Status</label>
+            <select name="status" id="status" class="form-select">
+                <option value="public" selected>Public</option>
+                <option value="private">Private</option>
+            </select>
+
+        </div>
+        <h5 class="m-2">Write Your Blogs :</h5>
+        <div class="alert alert-warning" role="alert">
+            <strong>Warning!</strong> Image height and width Must be 100% !
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" name="body" id="body" style="height: 150px"></textarea>
+            <label for="floatingTextarea2"></label>
+        </div>
+
+        <input type="submit" value="Save" class="btn btn-primary mt-3">
+        <a href="/dashboard" class="btn btn-danger mt-3">Cancel</a>
+    </form>
+</div>

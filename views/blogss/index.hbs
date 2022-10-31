@@ -1,0 +1,29 @@
+<h5 class="text-center mt-5">Read The All Latest Public Blogs</h5>
+{{>_search}}
+<section class="banner2_section py-2">
+    <div class="container">
+        {{#each blogss}}
+        <div class="row pb-2 border m-3">
+            <div class="col-md-4 text-center mt-3">
+                {{!-- left side --}}
+                <img class="shadow p-1 bg-body" src="{{user.image}}" style="height:200px; width:200px;">
+            </div>
+            <div class="col-md-8 mt-4">
+                {{!-- right side --}}
+
+                <h5>{{title}}</h5>
+                <p class="text-wrap overflow-wrap text-truncate" style="word-wrap: break-word;  height:125px;   display: block;">{{stripTags (truncate body)}}</p>
+                {{!-- <p>{{stripTags (truncate body 150)}}</p> --}}
+                <a href="/blogss/{{_id}}" class="btn btn-outline-success">Read More</a>
+                <span class="float-end d-inline-block text-truncate py-2" style="max-width: 180px;">{{ formatDate createdAt 'MMM Do Y, h:mm:ss a'}}</span>
+            </div>
+        </div>
+        {{else}}
+        <p>No Blogss Are Present</p>
+        {{/each}}
+    </div>
+
+</section>
+
+{{>_pagination}}
+

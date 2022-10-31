@@ -1,0 +1,51 @@
+<div class="row mt-5 mb-4">
+    <div class="col-md-9 mt-3">
+        <div class="border">
+            <h3 class="p-4">{{blog.title}}</h3>
+
+            <div class="card-content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <span class="card-title p-4">{{formatDate blog.createdAt 'MMMM Do YYYY, h:mm:ss a'}}</span>
+                    </div>
+                    <div class="col-md-2 text-end">
+                        <div class="btn-group dropstart">
+                            <a class="btn btn-outline-success" href="" role="button" id="dropdownMenuLink"
+                                data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-share-square"></i></a>
+
+                            <ul class="dropdown-menu text-center p-1" aria-labelledby="dropdownMenuLink">
+                                <li><a class="btn btn-outline-success "
+                                        href="whatsapp://http://localhost:3000/blogss/6341909e686929f58fe0c61d#"
+                                        data-action="share/whatsapp/share"><i class="fab fa-whatsapp"></i></a></li>
+                                <li><a class="btn btn-outline-success m-1" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmovieslover.netlify.com"
+                                        target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a></li>
+                                <li><a class="btn btn-outline-success" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fparse.com"rel="noopener"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="p-4">
+                    {{{blog.body}}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 mt-3 ">
+        <div class="card bg sticky-sm-top " style=" border: 1px solid rgb(28, 185, 120); top:1;">
+            <div class="card-body">
+                <div class="container text-center py-3">
+                    <img class="teams_imag shadow" src="{{blog.user.image}}"
+                        style="height: 100px; width:100px;border:1px solid rgb(28, 185, 120);  border-radius:50%;">
+                </div>
+                <p class="text-center p-0 m-0">Writer</p>
+                <h5 class="card-title text-center" style="font-size:20px; color:#0f5132;">{{blog.user.displayName}}</h5>
+                <div class="text-center py-1">
+                    <a href="/blogss/user/{{blog.user._id}}" class="btn shadow my_btn_css"></i>More Post</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,21 @@
+.service_icon {
+    font-size: 55px;
+    color: rgb(28, 185, 120);
+}
+.bg{
+    background-image: url(/images/bottom.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;    
+}
+
+.my_btn_css{
+    border: 1px solid rgb(28, 185, 120);
+    color: rgb(28, 185, 120);
+}
+.my_btn_css:hover{
+    background-color: rgb(28, 185, 120);
+    color: #fff;
+}
+.my_color{
+    background-color: #a7c2b5;
+}

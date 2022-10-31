@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Blog Wallah Login</title>
+</head>
+
+<body>
+
+    <nav class="navbar border-bottom navbar-expand-lg py-3 navbar-light alert-success">
+        <div class="container">
+            <a style="font-size: 25px;" class="navbar-brand" href="/"><img src="/images/Blogwallah.png" alt="" width="40" height="40"
+                    class=" h1 d-inline-block" style="border-radius:50% ;">
+                𝝗Ⳑ𝝤ᏵѠ𝝖ⳐⳐ𝝖𝝜</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/#about_us">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/#services_sec">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/#team_section">Teams</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="alert-success" id="services_sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-5">
+                    <h3 class="pt-4 py-3" style="font-size:35px;">Now Days Bloging is Important!</h3>
+                    <p class="pt-4 py-2">Blogging is a good habit. By blogging, people share their new experiences with
+                        people.Which people get a lot of help by reading the blog.
+                        Blogwallah has come up with a platform where you can easily reach your thoughts and ideas to
+                        others.
+                        Blogwallah is a free website. Let's register now and share your thoughts and ideas.
+                    </p>
+                    <div class="section pt-2">
+                        <a href="/auth/google" class="btn btn-danger">
+                            <i class="fab fa-google left"></i> Login With Google
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 p-0 m-0">
+                    <img src="/images/graphic.png" style="height: 450px; width:100%;" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!services section}}
+    <section id="services_section" class="py-3">
+        <div class="container">
+            {{!-- <h1 class="text-center text-secondry">Services That We provide</h1> --}}
+            <div class="row mt-3">
+                {{!-- first servies column --}}
+                <div class="col-md-4 pt-3 ">
+                    <div class="card shadow " style=" border: 1px solid rgb(28, 185, 120);">
+                        <div class="card-body">
+                            <div class="container text-center py-3">
+                                <i class="fas fa-trash-alt service_icon"></i>
+                                <h5 class="card-title float-end pt-3" style="font-size:25px; color:#0f5132;">Easily
+                                    Delelet</h5>
+                            </div>
+
+                            <p class="p-3">Blogwallah provides a simple user interface so that you can delete your blogs
+                                and posts in a single click.</p>
+                        </div>
+                    </div>
+                </div>
+                {{!-- second service column --}}
+                <div class="col-md-4 pt-3">
+                    <div class="card shadow " style=" border: 1px solid rgb(28, 185, 120);">
+                        <div class="card-body">
+                            <div class="container text-center py-3">
+                                <i class="far fa-edit service_icon"></i>
+                                <h5 class="card-title float-end pt-3" style="font-size:25px; color:#0f5132;">Easily Edit
+                                </h5>
+                            </div>
+
+                            <p class="p-3">Blogwallah provides a simple user interface so that you can Edit your blogs
+                                and posts in a single click.</p>
+                        </div>
+                    </div>
+                </div>
+                {{!-- third service column --}}
+                <div class="col-md-4 pt-3">
+                    <div class="card shadow " style=" border: 1px solid rgb(28, 185, 120);">
+                        <div class="card-body">
+                            <div class="container text-center py-3">
+                                <i class="fas fa-user-shield service_icon"></i>
+                                <h5 class="card-title float-end pt-3" style="font-size:25px; color:#0f5132;">
+                                    Public/Private</h5>
+                            </div>
+
+                            <p class="p-3">The app can make your blog posts public and private whenever you feel like
+                                it.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!-- banner1 section start here --}}
+    <section class="banner2_section pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 pt-4">
+                    {{!-- left side --}}
+                    <h3 class="pt-4" style="color:#0f5132;">
+                        Which type of tools will you get to write a blog?
+                    </h3>
+                    <p class="pt-3">
+                        Blogwallah provides many editing tools that you can use while writing a blog or post.
+                        In this editing tool you will find almost all the tools that a blogger needs.
+                        Talking about tools, all the heading tools are available in them. And if you want to change your
+                        text then some general font family is also available in this tool. In this tool you will also
+                        get
+                        the option of spelling checker, which will show you red under line on wrong spelling. To write
+                        point wise text,
+                        you will get to see bulleted list and number list. Along with this, you can also add the image
+                        to give a better
+                        look to the blog or post. Blogwallah provides you with a lot of tools like this.
+                    </p>
+                    <button class="btn btn-outline-success mt-2">Read More</button>
+                </div>
+                <div class="col-md-6">
+                    {{!-- right side --}}
+                    <img src="./images/banner_graphic.png" style="height:500px; width:100%;"
+                        class="img-fluid text-center" alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    {{!-- banner2 section start here --}}
+    <section class="banner3_section py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    {{!-- left side --}}
+                    <img src="./images/banner_2_graphic.png" class="img-fluid text-center" alt=""
+                        style="height:500px; width:100%" ;>
+
+                </div>
+                <div class="col-md-6 pt-5" style="text-align:right;">
+                    {{!-- right side --}}
+                    <h3 class="pt-4" style="color:#0f5132;">
+                        Who can read and write blogwallah posts.
+                    </h3>
+                    <p class="pt-4">
+                        You must have a Google account to read or write blog posts on the Blogwallah website. If you do
+                        not
+                        have google account then you can create google account from here and then login. Click on the
+                        Google
+                        Login button above to read or write a blog or post. After signing in, you will directly go to
+                        Blogwallah
+                        dashboard where you get both option to read and write blog posts. Where you can make your blog
+                        or post
+                        public or private, as well as you can delete and edit your blog or post. If you do not have a
+                        Google
+                        Account, you will not be able to access Blogwallah's services.
+                    </p>
+                    <div class="pt-2">
+                        <button class="btn btn-outline-success mt-2">Read More</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    {{!services section}}
+    <section id="team_section" class="py-3">
+
+        <div class="container">
+            <h2 class="text-center border-bottom py-2 pb-3" style="color:#0f5132;">Our Teams</h2>
+            {{!-- <h1 class="text-center text-secondry">Services That We provide</h1> --}}
+            <div class="row mt-3">
+                {{!-- first team member column --}}
+                <div class="col-md-4 pt-3 ">
+                    <div class="card shadow bg " style=" border: 1px solid rgb(28, 185, 120);">
+                        <div class="card-body">
+                            <div class="container text-center py-3">
+                                <img class="teams_imag shadow"
+                                    src="https://drive.google.com/uc?export=download&id=1Bq_LGEsptPdeH2OK3eTYWWqPcgTmCHaM"
+                                    style="height: 150px; width:150px;border:1px solid rgb(28, 185, 120);  border-radius:50%;">
+                            </div>
+                            <h5 class="card-title text-center pt-3" style="font-size:25px; color:#0f5132;">Mohan
+                                Chaudhary</h5>
+
+                            <div class="text-center py-2">
+                                <p class="p-0 m-0">Developer</p>
+                                <p class="p-0 m-0">AKTU University</p>
+                            </div>
+                            <div class="text-center">
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://instagram.com/____mohan05____?igshid=YmMyMTA2M2Y="><i
+                                        class="fab fa-instagram" style=" cursor: pointer;"></i></a>
+                                <!-- Linkedin -->
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://www.linkedin.com/in/mohan-chaudhary-35b61b1a4"><i
+                                        class="fab fa-linkedin-in" style="margin:0 10px; cursor: pointer;"></i></a>
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://twitter.com/MohanCh86327745?t=xm48Zt3phU3UOKivplMqsw&s=09"><i
+                                        class="fab fa-twitter" style=" cursor: pointer;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- second team member column --}}
+                <div class="col-md-4 pt-3">
+                    <div class="card shadow bg " style=" border: 1px solid rgb(28, 185, 120);">
+                        <div class="card-body">
+                            <div class="container text-center py-3">
+                                <img class="teams_imag shadow"
+                                    src="https://drive.google.com/uc?export=download&id=1WwjstGJjWPb-aryRsgXah6ah2fZbhRWL"
+                                    style="height: 150px; width:150px;border:1px solid rgb(28, 185, 120);  border-radius:50%;">
+                            </div>
+                            <h5 class="card-title text-center pt-3" style="font-size:25px; color:#0f5132;">Sandeep Kumar
+                            </h5>
+                            <div class="text-center py-2">
+                                <p class="p-0 m-0">Developer</p>
+                                <p class="p-0 m-0">IP University</p>
+                            </div>
+                            <div class="text-center">
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://www.instagram.com/invites/contact/?i=plrasine3xdj&utm_content=25i7eu0"><i
+                                        class="fab fa-instagram" style=" cursor: pointer;"></i></a>
+                                <!-- Linkedin -->
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://www.linkedin.com/in/kumarsandeep2002"><i class="fab fa-linkedin-in"
+                                        style="margin:0 10px; cursor: pointer;"></i></a>
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://twitter.com/imrsandeep?t=AuHkD7vIvvpevYNR6iP-2w&s=08"><i
+                                        class="fab fa-twitter" style=" cursor: pointer;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{!-- third third team member column --}}
+                <div class="col-md-4 pt-3">
+                    <div class="card shadow bg" style=" border: 1px solid rgb(28, 185, 120);">
+                        <div class="card-body">
+                            <div class="container text-center py-3">
+                                <img class="teams_imag shadow"
+                                    src="https://drive.google.com/uc?export=download&id=1VnrTC_m2augOKWmJR0lTC1MBqK0v9Nqc"
+                                    style="height: 150px; width:150px;border:1px solid rgb(28, 185, 120);  border-radius:50%;">
+                            </div>
+                            <h5 class="card-title text-center pt-3" style="font-size:25px; color:#0f5132;">
+                                Ayush Raj</h5>
+                            <div class="text-center py-2">
+                                <p class="p-0 m-0">Developer</p>
+                                <p class="p-0 m-0">AKTU University</p>
+                            </div>
+                            <div class="text-center">
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://www.instagram.com/invites/contact/?i=17fqgw4afcitw&utm_content=2gox5ya"><i
+                                        class="fab fa-instagram" style=" cursor: pointer;"></i></a>
+                                <!-- Linkedin -->
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://www.linkedin.com/in/ayush-lvu"><i class="fab fa-linkedin-in"
+                                        style="margin:0 10px; cursor: pointer;"></i></a>
+                                <a class="btn btn-outline-success btn-floating m-1"
+                                    href="https://twitter.com/Ayush4ap?t=5McLWAZFBIETZAZsAT5vVg&s=08"><i
+                                        class="fab fa-twitter" style=" cursor: pointer;"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- About section start here --}}
+
+    <section id="about_us" class="about_section py-5">
+        <div class="container text-center">
+            <h3 class="text-center border-bottom py-2 pb-3" style="color:#0f5132;">About this site</h3>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="py-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+                    <button class="btn btn-success">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    {{!-- footer area --}}
+    <footer class="bg-dark text-center text-white ">
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color: #198754; font-size:15px ;">
+            © 2022 Copyright :
+            <a class="text-white" style="text-decoration: none;" href="/">BlogWallah.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
